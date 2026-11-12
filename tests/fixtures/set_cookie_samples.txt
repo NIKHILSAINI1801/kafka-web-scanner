@@ -1,0 +1,11 @@
+# One Set-Cookie header per line. Every value here is a canary that must never appear in output.
+sessionid=CANARY-session-value; Path=/; HttpOnly; Secure; SameSite=Lax
+prefs=CANARY-prefs; Max-Age=3600
+__Host-id=CANARY-host; Secure; Path=/
+__Host-bad=CANARY-hostbad; Secure; Domain=example.test; Path=/
+__Secure-x=CANARY-secure
+track=CANARY-track; SameSite=None
+weird=CANARY-weird; SameSite=Bogus; HttpOnly; Secure
+novalue
+=CANARY-noname; Secure
+bad name=CANARY-space
